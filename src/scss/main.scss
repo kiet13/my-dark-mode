@@ -33,7 +33,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all .4s;
 }
 
 body {
@@ -46,6 +45,7 @@ body {
   min-height: 100vh;
   background-color: var(--clr-bcg);
   color: var(--clr-font);
+  transition: all .6s;
 }
 
 a {
