@@ -2,6 +2,11 @@
 @import "mixins";
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800;900&display=swap');
 
+:root {
+  --clr-bcg: #fff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+}
 
 
 html {
@@ -28,6 +33,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all .4s;
 }
 
 body {
@@ -35,11 +41,20 @@ body {
   font-size: 1.6rem;
 }
 
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--clr-bcg);
+  color: var(--clr-font);
+}
+
 a {
   text-decoration: none;
   font: inherit;
   width: initial;
 }
+
+
 
 @for $i from 1 to 10 {
   .mt-#{$i} {
@@ -65,4 +80,17 @@ a {
 
 .center {
   @include absCenter;
+}
+
+
+.dark-theme {
+  --clr-bcg: #282c35;
+  --clr-font: #fff;
+  --clr-primary: #ffa7c4;
+}
+
+.light-theme {
+  --clr-bcg: #fff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
 }

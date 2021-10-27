@@ -1,6 +1,9 @@
 @import "../scss/variables";
 
 .Blog {
-  max-width: 100vw;
-  min-height: 100vh;
+  width: 60rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
 }

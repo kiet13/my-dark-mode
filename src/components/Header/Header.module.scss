@@ -1,0 +1,25 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeadingText {
+  letter-spacing: .2rem;
+  text-transform: capitalize;
+  color: var(--clr-font);
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.ToggleButton {
+  outline: none;
+  border: none;
+  color: var(--clr-bcg);
+  background-color: var(--clr-primary);
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
